@@ -1,1 +1,1 @@
-todo: Add init.lua and lazy config
+todo: write some real docs in this readme to help future me
