@@ -14,11 +14,6 @@ return {
 
     config = function()
         local cmp = require('cmp')
-		cmp.setup({
-			mapping = {
-				['<Tab>'] = cmp.mapping.confirm({select = true }),
-			}
-		})
         local cmp_lsp = require("cmp_nvim_lsp")
         local capabilities = vim.tbl_deep_extend(
             "force",
@@ -86,6 +81,7 @@ return {
                 ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
                 ['<C-y>'] = cmp.mapping.confirm({ select = true }),
                 ["<C-Space>"] = cmp.mapping.complete(),
+				['<Tab>'] = cmp.mapping.confirm({select = true }),
             }),
             sources = cmp.config.sources({
                 { name = 'nvim_lsp' },
