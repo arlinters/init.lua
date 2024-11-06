@@ -12,5 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	spec = "arlinters.lazy"
+	spec = "personal.lazy"
 })
+
+
