@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	spec = "personal.lazy"
 	spec = {
     {import="personal.lazy"},
     {import="workspace.lazy"},
