@@ -1,5 +1,5 @@
 local lsp = require('lsp-zero')
-local utils = require("utils")
+local utils = require("global.utils")
 local lsp_helper = utils.require_if_exists('workspace.lsp_helper')
 
 lsp.on_attach(function(client, bufnr)
