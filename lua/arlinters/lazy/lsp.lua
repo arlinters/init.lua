@@ -14,6 +14,11 @@ return {
 
     config = function()
         local cmp = require('cmp')
+		cmp.setup({
+			mapping = {
+				['<Tab>'] = cmp.mapping.confirm({select = true }),
+			}
+		})
         local cmp_lsp = require("cmp_nvim_lsp")
         local capabilities = vim.tbl_deep_extend(
             "force",
