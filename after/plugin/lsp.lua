@@ -11,7 +11,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'jdtls', 'kotlin_language_server', 'tsserver', 'lua_ls', 'rust_analyzer'},
+  ensure_installed = {'jdtls', 'kotlin_language_server', 'lua_ls', 'rust_analyzer'},
   handlers = {
     lsp.default_setup,
     lua_ls = function()
